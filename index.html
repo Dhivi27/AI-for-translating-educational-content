@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI for Translating Educational Content in Real-Time</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="overlay">
+      <h1>AI for Translating Educational Content in Real-Time</h1>
+      <p>Empowering global learning through Artificial Intelligence</p>
+      <a href="#about" class="btn">Discover More</a>
+      <a href="#demo" class="btn">Try Live Demo</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About the Project</h2>
+    <div class="content">
+      <img src="images/ai.jpg" alt="AI Education">
+      <p>
+        <strong>AI for Translating Educational Content in Real-Time</strong> is an innovative project that harnesses Artificial Intelligence (AI)
+        and Natural Language Processing (NLP) to translate lectures, presentations, and study materials instantly.  
+        The main aim is to remove language barriers in education, ensuring that every learner—regardless of their linguistic background—
+        can access the same knowledge equally.
+      </p>
+      <p>
+        The project integrates advanced speech-to-text and translation models that can interpret spoken or written content
+        and convert it to the learner’s preferred language in real time.
+      </p>
+    </div>
+  </section>
+
+  <!-- Abstract Section -->
+  <section id="abstract" class="section alt">
+    <h2>Abstract</h2>
+    <p>
+      The system uses AI-driven translation models and speech recognition algorithms to process educational materials dynamically.
+      It recognizes and translates key educational terms with contextual awareness.  
+      Unlike static translation tools, this system adapts to accents, regional variations, and real-time classroom interaction.
+    </p>
+    <p>
+      Through deep learning, the translation model improves continuously as it learns from user input and feedback.
+      It aims to build an inclusive educational environment that supports multilingual learners globally.
+    </p>
+
+    <h3>Key Features</h3>
+    <ul class="features">
+      <li>🌍 Real-time multilingual translation support</li>
+      <li>🎙️ Automatic speech recognition for lectures</li>
+      <li>📖 Context-based translation of educational terms</li>
+      <li>🧠 Self-learning AI models with feedback adaptation</li>
+      <li>📡 Cloud-based deployment for scalability</li>
+      <li>🎓 Integration with virtual classrooms and e-learning platforms</li>
+    </ul>
+  </section>
+
+  <!-- Workflow Section -->
+  <section id="workflow" class="section">
+    <h2>How It Works</h2>
+    <div class="workflow">
+      <div class="step">
+        <h3>1️⃣ Audio / Text Input</h3>
+        <p>The system receives either spoken or written educational content from teachers or students.</p>
+      </div>
+      <div class="step">
+        <h3>2️⃣ AI Processing</h3>
+        <p>AI models analyze the content using NLP and identify languages, tone, and educational context.</p>
+      </div>
+      <div class="step">
+        <h3>3️⃣ Translation & Output</h3>
+        <p>The translated text or audio is generated instantly, allowing users to learn in their chosen language.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section id="benefits" class="section alt">
+    <h2>Benefits & Applications</h2>
+    <div class="content">
+      <img src="images/learning.jpg" alt="Global Learning">
+      <ul class="features">
+        <li>🌐 Promotes inclusive and multilingual education</li>
+        <li>💬 Helps non-native speakers understand complex topics</li>
+        <li>🎧 Provides real-time subtitles in virtual classes</li>
+        <li>📚 Translates e-learning content dynamically</li>
+        <li>🤖 Supports AI tutors and intelligent assistants</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Technology Section -->
+  <section id="tech" class="section">
+    <h2>Technologies Used</h2>
+    <div class="tech-grid">
+      <div class="card">Python</div>
+      <div class="card">TensorFlow</div>
+      <div class="card">NLP</div>
+      <div class="card">Speech Recognition</div>
+      <div class="card">Streamlit</div>
+      <div class="card">Google Translate API</div>
+      <div class="card">HTML / CSS / JS</div>
+    </div>
+  </section>
+   <!-- Live Demo Section -->
+   <section id="demo" class="section">
+    <h2>Live Demo: Translate Educational Text</h2>
+    <div class="demo-grid">
+      <div class="demo-input">
+        <label for="sourceText">Enter text to translate</label>
+        <textarea id="sourceText" rows="6" placeholder="Type or paste lecture notes, instructions, or definitions..."></textarea>
+        <div class="row">
+          <div class="col">
+            <label for="sourceLang">From</label>
+            <select id="sourceLang">
+              <option>Loading…</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="targetLang">To</label>
+            <select id="targetLang">
+              <option>Loading…</option>
+            </select>
+          </div>
+        </div>
+        <div class="row" style="align-items:center;">
+          <label style="display:flex; gap:8px; align-items:center;">
+            <input type="checkbox" id="multiToggle"> Translate to multiple languages
+          </label>
+        </div>
+        <div id="multiLangRow" class="row" style="display:none;">
+          <div class="col" style="grid-column: 1 / -1;">
+            <label>Select languages</label>
+            <div id="multiLangList" style="display:flex; flex-wrap:wrap; gap:10px;">
+              <!-- Filled by script.js -->
+            </div>
+          </div>
+        </div>
+        <button id="translateBtn" class="btn">Translate</button>
+      </div>
+      <div class="demo-output">
+        <label for="outputText">Translated output</label>
+        <textarea id="outputText" rows="6" readonly placeholder="Your translation will appear here..."></textarea>
+      </div>
+    </div>
+    <p class="helper">Note: This demo uses a simple on-page dictionary for a few education terms. Replace with an API later for full translations.</p>
+  </section>
+
+
+  <!-- Team / Developer Section -->
+  <section id="team" class="section alt">
+    <h2>About Developer</h2>
+    <div class="content">
+      <img src="images/translate.png" alt="Developer">
+      <p>
+        Hi, I'm <strong>[Dhivyasathya]</strong> — a passionate AI & ML enthusiast currently working on real-world solutions
+        that make education more accessible through technology.
+        My goal is to bridge the gap between language and learning using the power of Artificial Intelligence.
+      </p>
+      <p>
+        Skills: Python, Java, Machine Learning, NLP, Streamlit, Frontend Development.
+      </p>
+    </div>
+  </section>
+  
+ 
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>📧 Email: <a href="mailto:dhivyasathyravi@gmail.com">dhivyasathyravi@gmail.com</a></p>
+    <p>🌍 LinkedIn: <a href="https://linkedin.com/in/Dhivyasathya" target="_blank" rel="noopener">linkedin.com/in/Dhivyasathya</a></p>
+    <p>💻 GitHub: <a href="https://github.com/Dhivi27" target="_blank" rel="noopener">github.com/Dhivi27</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 · AI Translation Project · Built by <strong>Dhivyasathya</strong></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
